@@ -1,0 +1,27 @@
+<svg width="95" height="87" viewBox="0 0 95 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Ellipse_1_transform_0 {
+  0% {
+    animation-timing-function: ease-out;
+    transform: translateX(13px) translateY(9px) translate(34.5px, 34.5px) scaleX(1) scaleY(1) translate(-34.5px, -34.5px);
+  }
+  100% {
+    transform: translateX(13px) translateY(9px) translate(34.5px, 34.5px) scaleX(1.2) scaleY(1.2) translate(-34.5px, -34.5px);
+  }
+}
+#Ellipse_1 {
+  transform-origin: 0 0;
+  animation: kf_Ellipse_1_transform_0 1s linear infinite;
+}
+</style>
+<g id="Click_O_and_wink_face_appears" clip-path="url(#clip0_2_19)">
+<circle id="Ellipse_1" transform="translate(13 9)" cx="34.5" cy="34.5" r="34.5" fill="white"/>
+<path id="Vector_1" transform="translate(52 31)" d="M0 4.84784C0.527992 3.79181 1.592 2.1918 4.11201 0.591801C5.6414 -0.379233 8.48001 0.0478014 10.236 0.443803C11.992 0.839804 12.784 1.63181 13.588 2.43581C14.392 3.23982 15.184 4.03183 16 5.64781" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" transform="translate(32 34)" d="M0 0H0.799988" stroke="#1E1E1E" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_2_19">
+<rect width="95" height="87" fill="white"/>
+</clipPath>
+</defs>
+</svg>

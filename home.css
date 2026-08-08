@@ -1,0 +1,155 @@
+.screen-1,
+.screen-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-top {
+  height: 100px;
+}
+
+.whitemoon-icon {
+  padding-left: 10px;
+  cursor: pointer;
+  transition: width 0.25s;
+  width: 90px;
+}
+
+.whitemoon-icon:hover {
+  width: 100px;
+}
+
+.welcome-middle,
+.welcome-bottom {
+  height: 500px;
+  position: relative;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.title-container {
+  background-image: url(Icons/squiggly\ line.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 1750px;
+  height: 400px;
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-title {
+  background-color: rgb(30 , 30 ,30);
+  padding: 66px 150px;
+  text-align: center;
+  width: 1350px;
+  height: 200px;
+  letter-spacing: 2px;
+  font-size: 150px;
+  border: 4px solid rgb(199, 163, 243);
+  z-index: 100;
+  border-radius: 10px;
+}
+
+.welcome-title span {
+  cursor: pointer;
+}
+
+.bottom-middle {
+  flex: 1;
+  height: 400px;
+  padding-top: 50px;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.welcome-button {
+  background-color: rgb(199,163,243);
+  font-weight: 1000px;
+  color: white;
+  font-family: 'rowdies';
+  font-size: 50px;
+  letter-spacing: 2px;
+
+  width: 350px;
+  height: 150px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  transition: width 0.25s;
+  transition: height 0.25s;
+  transition: box-shadow 0.25s;
+}
+
+.welcome-button:hover {
+  width: 355px;
+  height: 155px;
+  box-shadow: 3px 5px 10px rgba(134, 134, 134, 0.25);
+}
+
+.bottom-right {
+  flex: 1;
+  height: 575px;
+  position: relative;
+}
+
+.paw-prints {
+  position:absolute;
+  width: 450px;
+  bottom: 0px;
+  right: 120px;
+}
+
+.cat-welcome { 
+  position:absolute;
+  width: 200px;
+  bottom: 290px;
+  right:  0px;
+  cursor: pointer;
+}
+
+.bottom-left { 
+  flex: 1;
+}
+
+
+/* Purple moon-section */
+.screen-2 {
+  background-color: white;
+}
+
+.purplemoon-icon {
+  padding-left: 10px;
+  cursor: pointer;
+  transition: width 0.25s;
+  width: 90px;
+}
+
+.purplemoon-icon:hover {
+  width: 100px;
+}
+
+.welcome-title2 {
+  background-color: white;
+  color:rgb(199, 163, 243);
+  padding: 66px 150px;
+  text-align: center;
+  width: 1350px;
+  height: 200px;
+  letter-spacing: 2px;
+  font-size: 150px;
+  border: 4px solid rgb(199, 163, 243);
+  z-index: 100;
+  border-radius: 10px;
+}
+
+.welcome-title2 span {
+  cursor: pointer;
+}

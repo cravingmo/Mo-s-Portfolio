@@ -1,13 +1,50 @@
+/* Acts as the window mask */
+.viewport {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Hides the screen waiting on the side */
+  position: relative;
+}
+
+/* Holds both screens side-by-side */
+.slider-container {
+  display: flex;
+  width: 200vw; /* 100vw per screen * 2 screens */
+  height: 100vh;
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth slide curve */
+}
+
+/* Individual screens take up exactly one viewport width */
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .screen-1,
 .screen-2 {
   display: flex;
   flex-direction: column;
 }
 
+/* Active target positioning classes, look up more what this does*/
+.slide-to-screen-1 {
+  transform: translateX(0);
+}
+
+
+/* Dark mode-screen */
+.screen-1 {
+  background-color: rgb(30 , 30 ,30);
+}
+
+/* creates top container */
 .welcome-top {
   height: 100px;
 }
 
+/* styles moon */
 .whitemoon-icon {
   padding-left: 10px;
   cursor: pointer;
@@ -19,6 +56,7 @@
   width: 100px;
 }
 
+/* creates middle and bottom container */
 .welcome-middle,
 .welcome-bottom {
   height: 500px;
@@ -27,6 +65,38 @@
   display: flex;
   align-items: start;
   justify-content: center;
+}
+
+#surprise-img {
+  left: 910px;
+  top: 155px;
+}
+
+#surprise-img2{
+  left: 915px;
+  top: 148px;
+}
+
+#surprise-img,
+#surprise-img2 {
+  position: absolute;
+  z-index: 200;
+
+  width: 150px;
+  
+  opacity: 0;
+  transform: scale(0);
+
+  pointer-events: none;
+
+  transition: transform 0.5s ease,
+  opacity 0.5s ease;
+}
+
+#surprise-img.show,
+#surprise-img2.show {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .title-container {
@@ -120,7 +190,11 @@
 }
 
 
-/* Purple moon-section */
+/* light mode section */
+.slide-to-screen-2 {
+  transform: translateX(-100vw); /* Shifts the container left, exposing Screen 2 */
+}
+
 .screen-2 {
   background-color: white;
 }

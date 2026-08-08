@@ -18,21 +18,22 @@
     <div class="slider-container" id="slider">
 
         <!-- welcome page1 -->
-        <div class="screen-1">
+        <div class="screen screen-1">
           <!-- top section -->
           <div class="welcome-top">
-            <a href="welcomelight.html"> 
-              <img class="whitemoon-icon" src="Icons/white moon.png">
-            </a>
+            <img onclick="navigateTo('screen-2')" class="whitemoon-icon" src="Icons/white moon.png">
           </div>
 
           <!-- middle section -->
           <div class="welcome-middle">
             <div class="title-container">
               <div class="welcome-title">
-                M<span id="smiley-letter">O</span>ments
+                M<span id="smiley-letter-white">O</span>ments
               </div>
             </div>
+
+            <img id="surprise-img" src="Icons/WHITE O.svg">
+
           </div>
 
           <!-- welcome bottom -->
@@ -59,21 +60,22 @@
 
         
         <!-- welcome pg.2 -->
-        <div class="screen-2">
+        <div class="screen screen-2">
           <!-- top section -->
           <div class="welcome-top">
-            <a href="welcome.html"> 
-              <img class="purplemoon-icon" src="Icons/purple moon.png">
-            </a>
+              <img onclick="navigateTo('screen-1')" class="purplemoon-icon" src="Icons/purple moon.png">
           </div>
 
           <!-- middle section -->
           <div class="welcome-middle">
             <div class="title-container">
               <div class="welcome-title2">
-                M<span id="smiley-letter">O</span>ments
+                M<span id="smiley-letter-purple">O</span>ments
               </div>
             </div>
+
+            <img id="surprise-img2" src="Icons/PURPLE O.png">
+
           </div>
 
           <!-- welcome bottom -->
@@ -100,5 +102,6 @@
       </div>
       </div>
 
+    <script src="script.js"></script>
     </body>
 </html>

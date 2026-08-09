@@ -53,7 +53,7 @@
   width: 100px;
 }
 
-.welcome-title2 {
+.title-text2 {
   background-color: white;
   color:rgb(199, 163, 243);
   padding-top: 66px;
@@ -70,7 +70,7 @@
   border-radius: 10px;
 }
 
-.welcome-title2 span {
+.title-section2 span {
   cursor: pointer;
 }
 
@@ -80,7 +80,7 @@
 }
 
 /* creates top container */
-.welcome-top {
+.header-section {
   height: 100px;
 }
 
@@ -97,7 +97,7 @@
 }
 
 /* creates middle and bottom container */
-.welcome-bottom {
+.start-section {
   height: 500px;
   position: relative;
 
@@ -106,7 +106,7 @@
   justify-content: center;
 }
 
-.welcome-middle {
+.title-section {
   height: 500px;
 
   display: flex;
@@ -121,8 +121,8 @@
   top: 30px;
 }
 
-.welcome-title span,
-.welcome-title2 span {
+.title-section span,
+.title-section2 span {
   position: relative;
 }
 
@@ -164,7 +164,7 @@
   justify-content: center;
 }
 
-.welcome-title {
+.title-text {
   background-color: rgb(30 , 30 ,30);
   padding-top: 66px;
   padding-bottom: 66px;
@@ -185,8 +185,8 @@
     height: 320px;
   }
   
-  .welcome-title,
-  .welcome-title2 {
+  .title-text,
+  .title-text2 {
     font-size: 125px;
     padding-bottom: 10px;
   }
@@ -200,11 +200,11 @@
 
 }
 
-.welcome-title span {
+.title-section span {
   cursor: pointer;
 }
 
-.bottom-middle {
+.start-middle {
   flex: 1;
   height: 400px;
   padding-top: 50px;
@@ -239,7 +239,7 @@
   box-shadow: 3px 5px 10px rgba(134, 134, 134, 0.25);
 }
 
-.bottom-right {
+.start-right {
   flex: 1;
   height: 575px;
   position: relative;
@@ -252,7 +252,7 @@
   right: 120px;
 }
 
-.cat-welcome { 
+.start-cat { 
   position:absolute;
   width: 200px;
   bottom: 290px;
@@ -260,7 +260,7 @@
   cursor: pointer;
 }
 
-.bottom-left { 
+.start-left { 
   flex: 1;
 }
 

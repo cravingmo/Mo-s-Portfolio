@@ -90,8 +90,12 @@ body {
   margin-right: 20px;
 
   cursor: pointer;
+  transition: width 0.25s;
 }
 
+.intro-arrow img:hover {
+  width: 120px;
+}
 
 .intro-description-container,
 .intro-image-container {

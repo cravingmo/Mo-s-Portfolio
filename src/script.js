@@ -14,6 +14,18 @@ function navigateTo(screen) {
     }
 }
 
+function setTheme(theme) {
+
+    if (theme === "light") {
+        document.body.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+    } else {
+        document.body.classList.remove("light-mode");
+        localStorage.setItem("theme", "dark");
+    }
+
+}
+
 // function to have smiley image appear when clicking "O"
 const darkLetter = document.getElementById("smiley-letter-white");
 const whiteSmiley = document.getElementById("surprise-img");

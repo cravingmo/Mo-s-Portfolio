@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: rgb(30,30,30);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Acts as the window mask */
@@ -59,6 +59,7 @@ body {
   padding-left: 30px;
 
   font-size: 130px;
+  color: #C7A3F3;
 }
 
 .waving-cat {
@@ -117,6 +118,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  color: #C7A3F3;
 }
 
 .intro-text p {
@@ -127,11 +130,11 @@ body {
 }
 
 .intro-text p span {
-  color: #C7A3F3;
+  color: #8f5dcc;
 }
 
 .click-paw-text {
-  color: #3F3F3F;
+  color: #D9D9D9;
 }
 
 @media (max-width: 1610px) {

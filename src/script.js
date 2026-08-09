@@ -1,14 +1,17 @@
 // function to help the screen transition to and from dark and light
 function navigateTo(screen) {
-  const screen2 = document.querySelector(".screen-2");
+    const screen1 = document.querySelector(".screen-1");
+    const screen2 = document.querySelector(".screen-2");
 
-  if (screen === "screen-2") {
-    screen2.classList.add("active");
-  }
+    if (screen === "screen-2") {
+        screen2.classList.add("active");
+        screen1.classList.add("inactive");
+    }
 
-  if (screen === "screen-1") {
-    screen2.classList.remove("active");
-  }
+    if (screen === "screen-1") {
+        screen2.classList.remove("active");
+        screen1.classList.remove("inactive");
+    }
 }
 
 // function to have smiley image appear when clicking "O"

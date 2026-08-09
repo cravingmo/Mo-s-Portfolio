@@ -11,7 +11,7 @@
 .slider-container {
   position: relative;
 
-  width: 100%; /* 100vw per screen * 2 screens */
+  width: 100%;
   height: 100%;
 }
 
@@ -43,12 +43,20 @@
   background-color: white;
   z-index: 2;
 
+  pointer-events: none;
+
   transform: translateX(-100%);
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .screen-2.active {
   transform: translateX(0);
+
+  pointer-events: auto;
+}
+
+.screen-1.inactive {
+    pointer-events: none;
 }
 
 /* creates top container ratio was 100px 500px 500px*/

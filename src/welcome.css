@@ -9,21 +9,20 @@
 
 /* Holds both screens side-by-side */
 .slider-container {
-  display: flex;
+  position: relative;
 
-  width: 200vw; /* 100vw per screen * 2 screens */
-  height: 100vh;
-
-  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth slide curve */
+  width: 100%; /* 100vw per screen * 2 screens */
+  height: 100%;
 }
 
 /* Individual screens take up exactly one viewport width */
 .screen {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Active target positioning classes, look up more what this does*/
@@ -31,16 +30,25 @@
   transform: translateX(0);
 }
 .slide-to-screen-2 {
-  transform: translateX(-100vw); /* Shifts the container left, exposing Screen 2 */
+  transform: translateX(100vw); /* Shifts the container left, exposing Screen 2 */
 }
 
 /* Dark mode-screen */
 .screen-1 {
   background-color: rgb(30 , 30 ,30);
+  z-index: 1;
 }
 /* light mode-screen */
 .screen-2 {
   background-color: white;
+  z-index: 2;
+
+  transform: translateX(-100%);
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.screen-2.active {
+  transform: translateX(0);
 }
 
 /* creates top container ratio was 100px 500px 500px*/
@@ -49,7 +57,7 @@
 }
 
 /* Moon Icon Styling */
-.purplemoon-icon,
+.moon-icon,
 .whitemoon-icon {
   padding-left: 10px;
   width: 90px;
@@ -60,7 +68,7 @@
 }
 
 /* enlarges moons when you hover */
-.purplemoon-icon:hover,
+.moon-icon:hover,
 .whitemoon-icon:hover {
   width: 100px;
 }
@@ -83,7 +91,7 @@
 
 /* Squiggly-line img styling and positioning */
 .title-container {
-  background-image: url(Icons/squiggly\ line.png);
+  background-image: url(assets/icons/squiggly\ line.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 

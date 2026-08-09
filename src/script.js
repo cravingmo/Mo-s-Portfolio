@@ -1,13 +1,13 @@
 // function to help the screen transition to and from dark and light
-function navigateTo(targetScreen) {
-  const slider = document.getElementById('slider');
-  
-  if (targetScreen === 'screen-2') {
-    slider.classList.remove('slide-to-screen-1');
-    slider.classList.add('slide-to-screen-2');
-  } else {
-    slider.classList.remove('slide-to-screen-2');
-    slider.classList.add('slide-to-screen-1');
+function navigateTo(screen) {
+  const screen2 = document.querySelector(".screen-2");
+
+  if (screen === "screen-2") {
+    screen2.classList.add("active");
+  }
+
+  if (screen === "screen-1") {
+    screen2.classList.remove("active");
   }
 }
 

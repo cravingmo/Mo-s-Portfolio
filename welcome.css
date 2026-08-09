@@ -22,69 +22,30 @@
   flex-direction: column;
 }
 
-.screen-1,
-.screen-2 {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Active target positioning classes, look up more what this does*/
 .slide-to-screen-1 {
   transform: translateX(0);
 }
-
-/* light mode section */
 .slide-to-screen-2 {
   transform: translateX(-100vw); /* Shifts the container left, exposing Screen 2 */
-}
-
-.screen-2 {
-  background-color: white;
-}
-
-.purplemoon-icon {
-  padding-left: 10px;
-  cursor: pointer;
-  transition: width 0.25s;
-  width: 90px;
-}
-
-.purplemoon-icon:hover {
-  width: 100px;
-}
-
-.title-text2 {
-  background-color: white;
-  color:rgb(199, 163, 243);
-  padding-top: 66px;
-  padding-bottom: 66px;
-  text-align: center;
-  width: 70vw;
-  min-width: 750px;
-  max-width: 1700px;
-  height: 200px;
-  letter-spacing: 2px;
-  font-size: 150px;
-  border: 4px solid rgb(199, 163, 243);
-  z-index: 100;
-  border-radius: 10px;
-}
-
-.title-section2 span {
-  cursor: pointer;
 }
 
 /* Dark mode-screen */
 .screen-1 {
   background-color: rgb(30 , 30 ,30);
 }
-
-/* creates top container */
-.header-section {
-  height: 100px;
+/* light mode-screen */
+.screen-2 {
+  background-color: white;
 }
 
-/* styles moon */
+/* creates top container ratio was 100px 500px 500px*/
+.header-section {
+  height: 10vh;
+}
+
+/* Moon Icon Styling */
+.purplemoon-icon,
 .whitemoon-icon {
   padding-left: 10px;
   cursor: pointer;
@@ -92,66 +53,29 @@
   width: 90px;
 }
 
+/* enlarges moons when you hover */
+.purplemoon-icon:hover,
 .whitemoon-icon:hover {
   width: 100px;
 }
 
-/* creates middle and bottom container */
+
+/* title-section and start-section container */
+.title-section,
 .start-section {
-  height: 500px;
-  position: relative;
+  height: 50vh;
 
   display: flex;
   align-items: start;
   justify-content: center;
 }
 
-.title-section {
-  height: 500px;
-
-  display: flex;
-  align-items: start;
-  justify-content: center;
-}
-
-
-#surprise-img,
-#surprise-img2 {
-  left: -20px;
-  top: 30px;
-}
-
-.title-section span,
-.title-section2 span {
-  position: relative;
-}
-
-#surprise-img,
-#surprise-img2 {
-  position: absolute;
-  z-index: 200;
-
-  width: 150px;
-  
-  opacity: 0;
-  transform: scale(0);
-
-  pointer-events: none;
-
-  transition: transform 0.5s ease,
-  opacity 0.5s ease;
-}
-
-#surprise-img.show,
-#surprise-img2.show {
-  opacity: 1;
-  transform: scale(1);
-}
-
+/* Squiggly-line img styling and positioning */
 .title-container {
   background-image: url(Icons/squiggly\ line.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
   width: 75vw;
   height: 400px;
   max-height: 480px;
@@ -164,20 +88,66 @@
   justify-content: center;
 }
 
-.title-text {
-  background-color: rgb(30 , 30 ,30);
+/* Textbox styling and sizing */
+.title-text,
+.title-text2 {
   padding-top: 66px;
   padding-bottom: 66px;
-  text-align: center;
   width: 70vw;
   min-width: 750px;
   max-width: 1700px;
   height: 200px;
+  z-index: 100;
+
+  text-align: center;
   letter-spacing: 2px;
   font-size: 150px;
+  
   border: 4px solid rgb(199, 163, 243);
-  z-index: 100;
   border-radius: 10px;
+}
+
+/* Dark-mode textbox color */
+.title-text {
+  background-color: rgb(30 , 30 ,30);
+}
+/* light-mode textbox color */
+.title-text2 {
+  background-color: white;
+  color:rgb(199, 163, 243);
+}
+
+/* Makes "O" relative for smiley-img */
+.title-section span,
+.title-section2 span {
+  cursor: pointer;
+  position: relative;
+}
+
+/* Surprise face positioning, styling, and animation prep */
+#surprise-img,
+#surprise-img2 {
+  position: absolute;
+  z-index: 200;
+  left: -20px;
+  top: 30px;
+
+  width: 150px;
+  
+  opacity: 0;
+  transform: scale(0);
+
+  pointer-events: none;
+
+  transition: transform 0.5s ease,
+  opacity 0.5s ease;
+}
+
+/* styling for when surprise face shows */
+#surprise-img.show,
+#surprise-img2.show {
+  opacity: 1;
+  transform: scale(1);
 }
 
 @media (max-width: 1271px) {
@@ -195,18 +165,23 @@
   #surprise-img2 {
   width: 120px;
   left: -15px;
+  } 
 }
 
-
+/* Star-section container */
+.start-section {
+  position: relative;
 }
 
-.title-section span {
-  cursor: pointer;
-}
-
-.start-middle {
+.start-middle,
+.start-right,
+.start-left {
   flex: 1;
-  height: 400px;
+  height: 575px;
+}
+
+/* positions welcome-button */
+.start-middle {
   padding-top: 50px;
 
   display: flex;
@@ -214,6 +189,7 @@
   justify-content: center;
 }
 
+/* welcome-button styling */
 .welcome-button {
   background-color: rgb(199,163,243);
   font-weight: 1000px;
@@ -228,9 +204,8 @@
   border: none;
   cursor: pointer;
 
-  transition: width 0.25s;
-  transition: height 0.25s;
-  transition: box-shadow 0.25s;
+  transition: width 0.25s, height 0.25s, 
+    box-shadow 0.25s;
 }
 
 .welcome-button:hover {
@@ -240,8 +215,6 @@
 }
 
 .start-right {
-  flex: 1;
-  height: 575px;
   position: relative;
 }
 
@@ -258,10 +231,6 @@
   bottom: 290px;
   right:  0px;
   cursor: pointer;
-}
-
-.start-left { 
-  flex: 1;
 }
 
 

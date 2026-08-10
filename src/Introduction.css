@@ -115,7 +115,8 @@ body.light-mode .header-text {
 }
 
 .intro-image-container {
-  height: 1000px;
+  min-height: 950px;
+  height: 90%;
   border: 10px solid #C7A3F3;
 
   position: relative;
@@ -157,5 +158,60 @@ body.light-mode .click-paw-text {
 }
 
 @media (max-width: 1610px) {
+  .waving-cat-container {
+    width: 200px;;
+  }
+  
+  .waving-cat {
+    width: 150px;
+  }
 
+  .header-text {
+    font-size: 80px;
+  }
+
+  .intro-text p {
+    font-size: 30px;
+  }
+
+  .intro-arrow {
+    width: 100px;
+  }
+}
+
+.second-container,
+.fourth-container {
+  background-color: lightblue;
+}
+
+.grid-container {
+  height: 45%;
+  min-height: 533px;
+  padding: 0px 150px;
+  margin-bottom: 20px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.interest-container {
+  border: 10px solid #C7A3F3;
+  height: 100%;
+  column-gap: 10px;
+
+  
+}
+
+.third-container {
+  background-color: lightpink;
+  height: 35%;
+  min-height: 400px;
+
+}
+
+.fourth-container {
+  height: 6%;
+  min-height: 94.9px;
 }

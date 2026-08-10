@@ -107,7 +107,7 @@
   height: 400px;
   max-height: 480px;
   margin-top: 25px;
-  min-width: 800px;
+  min-width: 750px;
   max-width: 1800px;
 
   display: flex;
@@ -121,7 +121,7 @@
   padding-top: 66px;
   padding-bottom: 66px;
   width: 70vw;
-  min-width: 750px;
+  min-width: 700px;
   max-width: 1700px;
   height: 200px;
   z-index: 100;

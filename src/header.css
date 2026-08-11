@@ -41,3 +41,19 @@ body.light-mode .header-text {
   cursor: pointer;
   z-index: 10;
 }
+
+
+@media (max-width: 1610px) {
+  .waving-cat-container {
+    width: 200px;;
+  }
+  
+  .waving-cat {
+    width: 150px;
+  }
+
+  .header-text {
+    font-size: 80px;
+  }
+
+}

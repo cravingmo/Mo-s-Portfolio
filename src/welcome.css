@@ -7,14 +7,6 @@
   position: relative;
 }
 
-/* Holds both screens side-by-side */
-.slider-container {
-  position: relative;
-
-  width: 100%;
-  height: 100%;
-}
-
 /* Individual screens take up exactly one viewport width */
 .screen {
   width: 100%;

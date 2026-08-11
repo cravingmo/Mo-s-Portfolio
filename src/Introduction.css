@@ -34,50 +34,6 @@ body.light-mode {
   left: 0;
 }
 
-.header-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 150px;
-}
-
-.waving-cat-container,
-.header-text {
-  height: 150px;
-
-  display: flex;
-}
-
-.waving-cat-container {
-  width: 325px;
-  position: relative;
-
-  justify-content: end;
-  align-items: end;
-}
-
-.header-text {
-  flex: 1;
-  align-items: center;
-  padding-left: 30px;
-
-  font-size: 130px;
-}
-
-body.light-mode .header-text {
-  color: #C7A3F3;
-} 
-
-.waving-cat {
-  width: 150px;
-
-  position: absolute;
-  bottom: -20px;
-  cursor: pointer;
-  z-index: 10;
-}
-
 .intro-container {
   height: 90%;
 

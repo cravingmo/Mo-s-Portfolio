@@ -91,7 +91,7 @@
 
 /* Squiggly-line img styling and positioning */
 .title-container {
-  background-image: url(assets/icons/squiggly\ line.png);
+  background-image: url(../../assets/icons/squiggly\ line.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 

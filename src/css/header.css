@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
 
-  height: 150px;
+  height: 140px;
 }
 
 .waving-cat-container,
@@ -27,7 +27,7 @@
   padding-left: 30px;
   padding-right: 30px;
 
-  font-size: 130px;
+  font-size: 100px;
 }
 
 body.light-mode .header-text {
@@ -44,7 +44,7 @@ body.light-mode .header-text {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1224px) {
   .header-text {
     padding-left: 0;
   }

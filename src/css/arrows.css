@@ -14,11 +14,17 @@
   grid-column: 4;
 }
 
+.intro-arrow img {
+  margin-left: 20px;
+}
+
+.intro-arrow2 img {
+  margin-right: 20px;
+}
+
 .intro-arrow img,
 .intro-arrow2 img {
   width: 100px;
-  margin-left: 20px;
-  margin-right: 20px;
 
   cursor: pointer;
   transition: width 0.25s;
@@ -29,9 +35,14 @@
   width: 120px;
 }
 
-@media (max-width: 1610px) {
+@media (max-width: 1000px) {
   .intro-arrow,
   .intro-arrow2 {
-    width: 100px;
+    width: 70px;
   }
+
+  .intro-arrow2 {
+  grid-column: 3;
+  }
+
 }

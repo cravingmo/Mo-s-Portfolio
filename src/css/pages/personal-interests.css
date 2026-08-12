@@ -1,23 +1,149 @@
 body {
-    font-family: 'rowdies', 'roboto', arial;
-    color: white;
+  font-family: 'rowdies', 'roboto', arial;
+  color: white;
 
-    /* Prevent scrollbars and lock the viewport to full screen */
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  /* Prevent scrollbars and lock the viewport to full screen */
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
-    background-color: rgb(30,30,30);
+  background-color: rgb(30,30,30);
 }
 
 body.light-mode {
   background-color: rgb(255, 255, 255);
 }
 
-
 .grid-container {
+  height: auto;
+  min-height: 0;
+  padding: 0px 150px;
+  margin: 0px 50px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.interests-container {
+  height: auto;
+}
+
+.interest-image-container {
+  border: 10px solid rgb(199,163,243);
+  height: 1300px;
+
+  position: relative;
+}
+
+.interest-image-container img {
+  position: absolute;
+}
+
+.image-one {
+  left: 5%;
+  top: 5%;
+
+  width: 40%;
+}
+
+.hajimemashite {
+  left: -5%;
+  top: -15%;
+
+  width: 90%;
+}
+
+.drawing-hand {
+  right: -11.5%;
+  top: 25%;
+
+  width: 60%;
+}
+
+.yarn-ball {
+  right: -9%;
+  bottom: -13%;
+
+  width: 35%;
+}
+
+.image-two {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+
+  width: 35%;
+}
+
+.image-three {
+  left: 5%;
+  bottom: 5%;
+
+  width: 35%;
+}
+
+.interest-text-container {
+  border-left: 10px solid white;
+
+  margin-top: 30px;
+  height: 30%;
+}
+
+.interest-text-container div {
+  padding-left: 15px;
+  line-height: 80px;
+  font-size: 35px;
+}
+
+.third-container {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+  height: 80px;
+}
+
+.third-container div {
+  color: #3F3F3F;
+  font-size: 30px;
+}
+
+@media (max-width: 950px) {
+  .viewport {
+    width: 100%;
+    min-height: 100vh;
+
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .grid-container {
+    height: auto;
+    min-height: 0;
+
+    padding: 0px 50px;
+    margin: 0px 10px;
+
     display: grid;
-    background-color: lightblue;
-    height: 80%;
-    width: 80%;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .interests-container {
+    
+  }
+
+  .interest-image-container {
+    border: 10px solid rgb(199,163,243);
+    height: 400px;
+
+    position: relative;
+  }
+
+  .interest-text-container {
+    height: auto;
+    margin-top: 30px;
+  }
 }
